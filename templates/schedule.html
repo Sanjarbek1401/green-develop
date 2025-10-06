@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+{% load static %}
+	{% block content %}
+
+<main id="main" style="padding-top:50px">
+
+    <!--==========================
+      About Section
+    ============================-->
+<section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Conference program</h2>
+          <p>Here is our event schedule</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">February 17, 2025</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">February 18, 2025</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">February 19, 2025</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">Don`t miss this amazing big events
+conference and opportunities!</h3>
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00-18:00</time></div>
+              <div class="col-md-10">
+                <h4>Check in and Conference Materials Collection</h4>
+              </div>
+            </div>
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:00-09:10</time></div>
+              <div class="col-md-10">
+                <h4>Opening Remarks by the Conference Chair</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:10-09:40</time></div>
+              <div class="col-md-10">
+                <h4>Keynote Speech I</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:40-10:10</time></div>
+              <div class="col-md-10">
+                <h4>Keynote Speech II</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:10-11:00</time></div>
+              <div class="col-md-10">
+                <h4>Coffee Break</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00-11:30</time></div>
+              <div class="col-md-10">
+                <h4>Keynote Speech III</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:30-12:00</time></div>
+              <div class="col-md-10">
+                <h4>Keynote Speech IV</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00-13:30</time></div>
+              <div class="col-md-10">
+                <h4>Lunch Time</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>13:30-16:00</time></div>
+              <div class="col-md-10">
+                <h4>Invite Speeches</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>16:00-16:30</time></div>
+              <div class="col-md-10">
+                <h4>Coffee Break</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>16:30-19:00</time></div>
+              <div class="col-md-10">
+                <h4>Invite Speeches</h4>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+          <!-- Schdule Day 3 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:00-12:00</time></div>
+              <div class="col-md-10">
+
+                <h4>Invite Speeches</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00-13:30</time></div>
+              <div class="col-md-10">
+
+                <h4>Lunch Time</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>13:30-14:00</time></div>
+              <div class="col-md-10">
+
+                <h4>Closing Remarks & group photo</h4>
+              </div>
+            </div>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>14:00-16:00</time></div>
+              <div class="col-md-10">
+
+                <h4>Tashkent city tour</h4>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- End Schdule Day 2 -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+   <section id="speakers" class=" section-with-bg fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Speakers</h2>
+        </div>
+
+        <div class="row">
+
+          {% for i in speaker %}
+          <div class="col-lg-6 col-md-6" style="padding:30px; ">
+            <div  style="  background-color:#e9ecef; padding:40px; border-radius:2%; height:100% ">
+              <div class="row">
+
+                <div class="col-md-5">
+              <img src="{{i.img.url}}" style="width:100%; border-radius:10%" >
+
+
+                </div>
+                <div class="col-md-7">
+                  <h5><b>{{i.name}}</b></h5>
+                  <h6>{{i.address}}</h6>
+                  {{i.info | safe}}
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+
+{% endblock content %}

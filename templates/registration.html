@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% load static %}
+	{% block content %}
+
+<main id="main" style="padding-top:50px">
+
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="sponsors" class="section wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>REGISTRATION</h2>
+        </div>
+
+        <div class="row justify-content-center">
+              <div class="col-12 col-lg-12" >
+                <h2 ><b>Registration Guide</b></h2>
+                <p>Each author or presenter must pay registration fee before the deadline. Only registered and paid papers will be scheduled in the conference program and proceedings. Registration is valid only when the payment is received and processed. Please send all registration files to icgsd.heed@gmail.com before the deadline.</p>
+
+              </div>
+            <div class="col-4 col-lg-4">
+                <b>Registration Types</b>
+            </div>
+            <div class="col-4 col-lg-4">
+                <b>Onsite</b>
+            </div>
+            <div class="col-4 col-lg-4">
+                <b>Online</b>
+            </div>
+            <div class="col-4 col-lg-4">
+                <p>Regular Registration</p>
+                <p>Student Registration</p>
+                <p>Extra Pages (Begin at Page 7)</p>
+                <p>Listener (Attendees without Publication) </p>
+                <p>Print Copy</p>
+            </div>
+            <div class="col-4 col-lg-4">
+                <p>350 USD / 4.55 mln. UZS</p>
+                <p>300 USD / 3.9 mln. UZS</p>
+                <p>30 USD / 390 000 USZ </p>
+                <p>150 USD / 1.95 mln. UZS</p>
+                <p>50 USD / 650 000 UZS per book</p>
+
+            </div>
+            <div class="col-4 col-lg-4">
+                 <p>300 USD / 3.9 mln. UZS</p>
+                <p>250 USD / 3.25 mln. UZS</p>
+                <p>30 USD / 390 000 USZ per extra page </p>
+                <p>100 USD / 1.3 mln. UZS</p>
+                <p>50 USD / 650 000 UZS per book</p>
+            </div>
+            {% for i in link %}
+            <div class="col-md-12" style="padding-top:15px"><a href="{{i.register_link}}" class="btn btn-primary">REGISTER</a></div>
+            {% endfor %}
+          <div class="col-12 col-lg-12">
+                <h2 style="padding-top:20px"><b>Attention for participants:</b></h2>
+                <p>1. After your submission accepted, you will receive the formal notification of acceptance from ICGSD 2025. In the notification, there will be detailed registration information. Kindly input the paper ID when making the payment.</p>
+              <p>2. At least one author per paper must register as a presenter (regular or student registration).</p>
+              <p>3. If you prefer to attend ICGSD 2025 without presentation and publication, we suggest you to register as the Listener.
+
+</p>
+              <p>4. Tour in agenda is optional for all participants (on payment basis).</p>
+              <p>5. Please take care of your safety and all personal belongings, and wear your name tags during the whole conference. No responsibility or liability is accepted by conference organizer in respect of any loss or damage.</p>
+
+              </div>
+
+          <div class="col-12 col-lg-12">
+                <h2 style="padding-top:20px"><b>Accommodation:</b></h2>
+                <p>Accommodation is not included in registration fee, the delegates need reserve rooms themselves, we advise you reserve rooms as early as you can. Except the conference hotel, you are free to reserve rooms nearby.</p>
+
+              </div>
+
+            <div class="col-12 col-lg-12">
+                <h2 style="padding-top:20px"><b>Exclusion of Liability</b></h2>
+                <p>The Conference Organizer will not be held responsible for participants’ failure to attend the conference directly or indirectly occasioned by visa application deny, riots, diseases or any conditions beyond the control of the Conference Organizer. And thus, the conference registration fee cannot be refunded.</p>
+
+              </div>
+
+            <div class="col-12 col-lg-12">
+                <h2 style="padding-top:20px"><b>Registration Entitlement </b></h2>
+                 <div class="row schedule-item">
+                     <div class="col-md-6"><b>Included</b></div>
+              <div class="col-md-6">
+               <b>Not Included</b>
+              </div>
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6">1. Oral/Poster Presentation (for Presenter only).</div>
+              <div class="col-md-6">
+               1. Accommodation fee;
+              </div>
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6">2. Publish one full paper in the conference </div>
+              <div class="col-md-6">
+               2. Transportation fee;
+              </div>
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6">3. Conference items (conference bag, Conference Program, Certificate, etc.).</div>
+              <div class="col-md-6">
+              3. Visa application costs;
+              </div>
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6">4. Access to all technical sessions, lunches and coffee breaks.</div>
+              <div class="col-md-6">
+               4. Publishing papers in any journals.
+              </div>
+                 </div>
+
+
+        </div>
+
+
+                        <div class="col-12 col-lg-12">
+                <h2 style="padding-top:20px"><b>Payment methods  </b></h2>
+                            <br>
+                 <div class="row schedule-item">
+                     <div class="col-md-6"><b>For foreigners</b></div>
+              <div class="col-md-6">
+               <b>For local</b>
+              </div>
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6" style="font-style: italic; padding-top:10px"><b>Bank Transfer</b></div>
+                     <div class="col-md-6" style="font-style: italic;padding-top:10px"><b>Bank Transfer</b></div>
+
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6">After filling out the registration form, an invoice will be generated and payment will be made based on this invoice. After that you can pay by bank transfer based on the invoice.</div>
+              <div class="col-md-6">
+               It is possible to make payment on the basis of an contract by concluding an contract with individuals and legal entities. You need to write to icgsd.heed@gmail.com to make payment by contract
+              </div>
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6" style="font-style: italic;padding-top:10px"><b>International Money Transfer</b></div>
+              <div class="col-md-6" style="font-style: italic;padding-top:10px">
+                  <b>Online payment</b>
+              </div>
+                 </div>
+                 <div class="row schedule-item">
+                     <div class="col-md-6">It is possible to pay through international money transfer systems such as Western Union, Золотая Корона and etc. After filling out the registration form, information will be provided on where to make the transfer and payment will be made by transferring money to this information.</div>
+              <div class="col-md-6">
+               After filling out the registration form, a video guide is provided and payment is made based on this. After making the payment, you will need to send it to icgsd.heed@gmail.com with a document confirming payment, indicating the name of the article.
+              </div>
+                     <div class="col-md-12" style="padding-top:10px">
+                        In special cases you can contact by icgsd.heed@gmail.com
+                     </div>
+                 </div>
+
+
+        </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+  </main>
+
+
+
+
+{% endblock content %}

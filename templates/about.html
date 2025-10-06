@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+	{% block content %}
+
+<main id="main" style="padding-top:50px">
+
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="sponsors" class="section wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>About</h2>
+        </div>
+
+        <div >
+             {% for i in about %}
+            {{i.info | safe}}
+            {% endfor %}
+
+
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+
+{% endblock content %}

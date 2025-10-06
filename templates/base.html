@@ -1,0 +1,156 @@
+{% load static %}
+
+{% block header %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Event</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+<!--  <link href="{% static 'img/favicon.png' %}" rel="icon">-->
+<!--  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+<!--        <a href="#intro" class="scrollto"><img src="{% static 'img/logo.png' %}" alt="" title=""></a>-->
+      </div>
+      <nav id="nav-menu-container">
+  <ul class="nav-menu">
+    <li class="menu"><a href="/">HOME</a></li>
+    <li class="menu"><a href="{% url 'about' %}">ABOUT</a></li>
+    <li class="menu"><a href="{% url 'venue' %}">DATES AND VENUE</a></li>
+    <li><a href="{% url 'schedule' %}">PROGRAM</a></li>
+    <li><a href="{% url 'authors' %}">AUTHORS</a></li>
+    <li><a href="{% url 'registration' %}">REGISTRATION</a></li>
+    <!-- Dropdown Menu -->
+
+  </ul>
+</nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+{% endblock header%}
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+{% block footer %}
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 footer-info">
+            <h4>about</h4>
+            <p>We would like to extend our warmest invitation to you for participating in 2025 International Conference on Green and Sustainable Development: Harmonizing Environmental and Economic Dimensions (ICGSD 2025) that will be held in Tashkent, Uzbekistan during February 17-19, 2025.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>EVENT DETAILS</h4>
+            <ul>
+              <li> After filling out the registration form</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact</h4>
+            <p>
+              <strong>Email:</strong> icgsd.heed@gmail.com<br>
+              <strong>Telegram:</strong> +998994433312<br>
+              <strong>Whats app:</strong> +998994433312<br>
+              <strong>Phone:</strong> +998994433312<br>
+              <strong>Conference Secretary: </strong> Sirojiddin Abrorov<br>
+            </p>
+
+            <div class="social-links">
+
+              <a href="#" class="google-plus"><i class="fa fa-telegram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-whatsapp"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="credits">
+
+        Designed by <a href="https://devmaster.uz/">Dev Master</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'lib/superfish/superfish.min.js' %}"></script>
+  <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+  <script src="{% static 'lib/venobox/venobox.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+<script>
+document.getElementById('venue').addEventListener('click', function(event) {
+    event.preventDefault(); // Havolani standart ishlashini oldini oladi
+    var link = this;
+    setTimeout(function() {
+        window.location.href = link.href; // Birinchi bosish
+        setTimeout(function() {
+            window.location.href = link.href; // Ikkinchi bosish
+        }, 500);
+    }, 500);
+});
+</script>
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
+{% endblock footer %}
